@@ -8,7 +8,7 @@ Tasks during this section include:
 - Changing datatypes of columns (to_numeric, to_datetime, astype)
 
 ## Data exploration: 
-To answer so business questions, many different pandas & matplotlib methods were utilized. They include:
+To answer some business questions, many different pandas & matplotlib methods were utilized. They include:
 - Concatenating multiple csvs together to create a new DataFrame (pd.concat)
 - Adding columns
 - Parsing cells as strings to make new columns (.str)

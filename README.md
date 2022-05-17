@@ -1,34 +1,14 @@
-# Pandas-Data-Science-Tasks
-Set of real world data science tasks completed using the Python Pandas library.
+# Background Information:
+Using Python Pandas skills, we have the capabilities of analyzing and answering business questions. The datasets used consist of 12 months worth of electronic sales with hundreds of thousands which are broken down by month, product type, cost,and etc. for certain products a company sells. 
 
-## Setup
-
-To access all of the files I recommend you fork this repo and then clone it locally. Instructions on how to do this can be found here: https://help.github.com/en/github/getting-started-with-github/fork-a-repo
-
-The other option is to click the green "clone or download" button and then click "Download ZIP". You then should extract all of the files to the location you want to edit your code.
-
-Installing Jupyter Notebook: https://jupyter.readthedocs.io/en/latest/install.html <br/>
-Installing Pandas library: https://pandas.pydata.org/pandas-docs/stable/install.html 
-
-## Background Information:
-
-This repo goes with [my video](https://youtu.be/eMOA1pPVUc4) on "Solving real world data science videos with Python Pandas!". Here is some information on that video.
-
-In this video we use Python Pandas & Python Matplotlib to analyze and answer business questions about 12 months worth of sales data. The data contains hundreds of thousands of electronics store purchases broken down by month, product type, cost, purchase address, etc. 
-
-We start by cleaning our data. Tasks during this section include:
+## Cleaning Data:
+Tasks during this section include:
 - Drop NaN values from DataFrame
 - Removing rows based on a condition
-- Change the type of columns (to_numeric, to_datetime, astype)
+- Changing datatypes of columns (to_numeric, to_datetime, astype)
 
-Once we have cleaned up our data a bit, we move the data exploration section. In this section we explore 5 high level business questions related to our data:
-- What was the best month for sales? How much was earned that month?
-- What city sold the most product?
-- What time should we display advertisemens to maximize the likelihood of customer’s buying product?
-- What products are most often sold together?
-- What product sold the most? Why do you think it sold the most?
-
-To answer these questions we walk through many different pandas & matplotlib methods. They include:
+## Data exploration: 
+To answer so business questions, many different pandas & matplotlib methods were utilized. They include:
 - Concatenating multiple csvs together to create a new DataFrame (pd.concat)
 - Adding columns
 - Parsing cells as strings to make new columns (.str)
@@ -37,9 +17,38 @@ To answer these questions we walk through many different pandas & matplotlib met
 - Plotting bar charts and lines graphs to visualize our results
 - Labeling our graphs
 
-Check out the first video I did on Pandas: <br/>
-https://youtu.be/vmEHCJofslg 
+### 5 high level business questions related to our data:
+- What was the best month for sales? How much was earned that month?
 
-Check out the videos I did on Matplotlib: <br/>
-https://youtu.be/DAQNHzOcO5A <br/>
-https://youtu.be/0P7QnIQDBJY
+![image](https://user-images.githubusercontent.com/90146132/168719748-e15b340d-df31-443b-a949-b0cba5610d7d.png)
+
+According to our bar chart, we can conclude that the month with the best sales were during the month of December. Sales were more than 4.5 million sales.
+
+- What city sold the most product?
+
+![image](https://user-images.githubusercontent.com/90146132/168720814-a7c6747d-744f-4d7c-b33e-796270f569ee.png)
+
+We can conclude that San Francisco, CA had the most sales throughtout the year with more than 8.5 million sales.
+
+- What time should we display advertisemens to maximize the likelihood of customer’s buying product?
+
+![image](https://user-images.githubusercontent.com/90146132/168721367-586216f2-76ad-41a9-b8fe-e33a7f59a2ec.png)
+
+Looking at the line graph, I recommend advertising around the hours of 11:00 and 18:00 to increase total orders
+
+- What products are most often sold together?
+
+![image](https://user-images.githubusercontent.com/90146132/168722054-f3d82d91-5c44-4010-990f-6893635a4290.png)
+
+The iPhone and Lightning Charging Cable are the two products most often sold together.
+
+- What product sold the most? Why do you think it sold the most?
+
+![image](https://user-images.githubusercontent.com/90146132/168722459-222ffbea-e6c0-4e34-977a-3ab9dc3db516.png)
+
+The product that sold the most was the AAA Batteries (4-pack).
+
+![image](https://user-images.githubusercontent.com/90146132/168722812-eb89f6ad-64d4-46c7-a210-25dced56d3c7.png)
+ 
+ By looking at the plot above, batteries are one of the cheapest items available which I believe is was is driving the quantity ordered since those prices are more attainable for purchasing those items.
+
